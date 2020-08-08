@@ -9,16 +9,16 @@ package liskov;
 public class Rectangle
 {
     int length;
-    int breadth;
+    int width;
     
     Rectangle (){
     
     }
     
-    Rectangle(int length, int breadth)
+    Rectangle(int length, int width)
     {
         this.length = length;
-        this.breadth = breadth;
+        this.width = width;
     }
 
     public int getLength() {
@@ -29,22 +29,22 @@ public class Rectangle
         this.length = length;
     }
 
-    public int getBreadth() {
-        return breadth;
+    public int getWidth() {
+        return width;
     }
 
-    public void setBreadth(int breadth) {
-        this.breadth = breadth;
+    public void setWidth(int width) {
+        this.width = width;
     }
 
     
     int getArea()
     {
-        return length * breadth;
+        return length * width;
     }
 
     int getPerimeter()
     {
-        return 2 * (length + breadth);
+        return 2 * (length + width);
     }
 }

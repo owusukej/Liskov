@@ -11,10 +11,10 @@ public class Square extends Rectangle
    
     public void setLength(int length){
         this.length=length;
-        this.breadth=length;
+        this.width=length;
     }
     public void setWidth(){
-        this.length=breadth;
-        this.breadth=breadth;
+        this.length=width;
+        this.width=width;
     }
 }
